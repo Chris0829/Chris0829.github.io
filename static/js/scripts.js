@@ -1,6 +1,19 @@
 
-const content_dir = 'contents/'
+const content_dirs = {
+    en: 'contents/',
+    zh: 'contents/zh/',
+};
 const config_file = 'config.yml'
+
+let currentLang = 'en';
+let slideshowInitialized = false;
+let scrollSpyInstance = null;
+
+function getContentDir() {
+    return Object.prototype.hasOwnProperty.call(content_dirs, currentLang)
+        ? content_dirs[currentLang]
+        : content_dirs.en;
+}
 
 const allowedUrlProtocols = ['http:', 'https:', 'mailto:', 'tel:'];
 const configOnlyKeys = ['nav', 'sections', 'backgrounds', 'background-interval-ms', 'background-overlay'];
@@ -99,12 +112,16 @@ function getNavigationItems(yml) {
 
 function activateScrollSpy() {
     const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
+    if (!mainNav) {
+        return;
     }
+    if (scrollSpyInstance) {
+        scrollSpyInstance.dispose();
+    }
+    scrollSpyInstance = new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNav',
+        offset: 74,
+    });
 }
 
 function bindResponsiveNavbar() {
@@ -266,7 +283,7 @@ function typesetMath() {
 }
 
 function loadConfig() {
-    return fetch(content_dir + config_file)
+    return fetch(getContentDir() + config_file)
         .then(response => response.text())
         .then(text => jsyaml.load(text) || {})
         .catch(error => {
@@ -309,7 +326,7 @@ function getConfiguredSections(yml) {
 }
 
 function loadMarkdownSection(name) {
-    return fetch(content_dir + name + '.md')
+    return fetch(getContentDir() + name + '.md')
         .then(response => response.text())
         .then(markdown => {
             const target = document.getElementById(name + '-md');
@@ -329,24 +346,78 @@ function markSiteReady() {
     document.body.classList.add('site-ready');
 }
 
-window.addEventListener('DOMContentLoaded', event => {
-    marked.use({ mangle: false, headerIds: false });
+function updateLangButtons() {
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+        button.classList.toggle('active', button.getAttribute('data-lang') === currentLang);
+    });
+}
 
-    loadConfig()
+function bindLanguageSwitch() {
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+        button.addEventListener('click', () => {
+            const lang = button.getAttribute('data-lang');
+            if (lang && lang !== currentLang) {
+                setLanguage(lang);
+            }
+            const navbarToggler = document.body.querySelector('.navbar-toggler');
+            if (navbarToggler && window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+}
+
+function initLanguage() {
+    let saved = null;
+    try {
+        saved = localStorage.getItem('academic-homepage-lang');
+    } catch {
+        saved = null;
+    }
+    currentLang = saved === 'zh' ? 'zh' : 'en';
+    updateLangButtons();
+}
+
+function setLanguage(lang) {
+    currentLang = Object.prototype.hasOwnProperty.call(content_dirs, lang) ? lang : 'en';
+    try {
+        localStorage.setItem('academic-homepage-lang', currentLang);
+    } catch {
+        // localStorage may be unavailable (e.g. private browsing); ignore.
+    }
+    updateLangButtons();
+    renderPage().catch((error) => console.log(error));
+}
+
+function renderPage() {
+    return loadConfig()
         .then((yml) => {
             applyConfig(yml);
             const sections = normalizeSections(yml.sections);
 
             renderNavigation(getNavigationItems(yml));
             renderSections(sections);
-            initBackgroundSlideshow(yml);
+
+            if (!slideshowInitialized) {
+                initBackgroundSlideshow(yml);
+                slideshowInitialized = true;
+            }
+
             activateScrollSpy();
             bindResponsiveNavbar();
 
             return Promise.all(getConfiguredSections(yml).map(loadMarkdownSection));
         })
-        .then(() => typesetMath())
+        .then(() => typesetMath());
+}
+
+window.addEventListener('DOMContentLoaded', event => {
+    marked.use({ mangle: false, headerIds: false });
+    initLanguage();
+    bindLanguageSwitch();
+
+    renderPage()
         .catch(error => console.log(error))
         .finally(() => markSiteReady());
 
-}); 
+});

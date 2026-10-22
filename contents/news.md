@@ -1,0 +1,6 @@
+- **[2025.12]** Our paper *"IGDMRec: Behavior Conditioned Item Graph Diffusion for Multimodal Recommendation"* is **accepted** at IEEE Transactions on Multimedia (TMM).
+- **[2025.10]** Chinese invention patent *"Recommendation Method and Apparatus Based on Multimodal Semantics and Behavior-Relation Diffusion Fusion"* (No. ZL202411862641.8) is **granted**.
+- **[2025.10]** *"Deep Learning for Time Series Forecasting: A Survey"* (IJMLC 2025) reaches **410+ citations** on Google Scholar.
+- **[2024.12]** Awarded the **2024 Master's Academic Scholarship, Special Grade**.
+- **[2024.09]** Started the M.Eng. program at the Hangzhou Institute of Technology, Xidian University.
+- **[2023.08]** Completed a remote research internship at the Infrastructure, AI and Urban Nexus Lab, Clemson University, on climate-adaptable urban structures.

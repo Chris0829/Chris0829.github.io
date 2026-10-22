@@ -1,28 +1,40 @@
-title: User Name's Homepage
-page-top-title: User Name
-top-section-bg-text: Computer Science
+title: Zhenghao Chen | Homepage
+page-top-title: Zhenghao Chen
+top-section-bg-text: Graph Intelligence & Urban Resilience
 backgrounds:
   - static/assets/background/background_0.jpeg
   - static/assets/background/background_1.jpeg
 background-interval-ms: 7000
 background-overlay: 0.52
-copyright-text: '&copy; Sen Li 2023-2026. All Rights Reserved.'
+copyright-text: '&copy; Zhenghao Chen 2024-2026. All Rights Reserved.'
 github-link:
   text: Github
-  href: https://github.com/senli1073
+  href: https://github.com/Chris0829
 license-link:
   text: License
-  href: https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE
+  href: https://github.com/Chris0829/Chris0829.github.io/blob/main/LICENSE
 sections:
   - id: home
     nav: HOME
-    title: User Name&ensp;|&ensp;姓名
-    href: '#page-top' # Default to '#<id>' if not specified
+    title: Zhenghao Chen&ensp;|&ensp;陈峥浩
+    href: '#page-top'
+  - id: news
+    nav: NEWS
+    title: NEWS
+    icon: bi-megaphone-fill
+  - id: research
+    nav: RESEARCH
+    title: RESEARCH EXPERIENCE
+    icon: bi-diagram-3-fill
   - id: publications
     nav: PUBLICATIONS
-    title: PUBLICATIONS
+    title: PUBLICATIONS & PATENTS
     icon: bi-file-text-fill
   - id: awards
     nav: AWARDS
-    title: AWARDS
+    title: HONORS & AWARDS
     icon: bi-award-fill
+  - id: service
+    nav: SERVICE
+    title: SERVICE & OTHERS
+    icon: bi-people-fill

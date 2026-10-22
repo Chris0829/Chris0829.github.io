@@ -170,7 +170,7 @@ body {
 }
 
 section header h2 {
-    font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: "Kanit", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     color: var(--h-title-color);
     font-size: 2.3rem;
     line-height: 4rem;
@@ -261,4 +261,69 @@ section .main-body {
     .skeleton-block::after {
         animation: none;
     }
+}
+
+/* Language switcher (EN / 中文) */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.lang-btn {
+    border: 1px solid #d6d9e0;
+    background: #ffffff;
+    color: #5a6472;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.lang-btn:hover {
+    border-color: var(--h-title-color);
+    color: var(--h-title-color);
+}
+
+.lang-btn.active {
+    background: var(--h-title-color);
+    border-color: var(--h-title-color);
+    color: #ffffff;
+}
+
+/* Collapsible "Details" blocks for research entries */
+.main-body details {
+    margin: 0.6rem 0 1rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #e7eaf0;
+    border-left: 4px solid var(--h-title-color);
+    border-radius: 0.4rem;
+    background: #ffffff;
+}
+
+.main-body summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--h-title-color);
+}
+
+.main-body details[open] summary {
+    margin-bottom: 0.5rem;
+}
+
+.main-body details p {
+    margin-bottom: 0.75rem;
+}
+
+/* Emphasis for "Core idea" blockquotes */
+.main-body blockquote {
+    border-left: 4px solid var(--h-title-color);
+    padding: 0.4rem 1rem;
+    margin: 0.5rem 0 1rem;
+    color: #3a4250;
+    background: rgba(57, 72, 210, 0.04);
+    border-radius: 0 0.4rem 0.4rem 0;
 }

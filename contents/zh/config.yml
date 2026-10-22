@@ -1,0 +1,40 @@
+title: 陈峥浩 | 个人主页
+page-top-title: 陈峥浩
+top-section-bg-text: 图智能与城市韧性
+backgrounds:
+  - static/assets/background/background_0.jpeg
+  - static/assets/background/background_1.jpeg
+background-interval-ms: 7000
+background-overlay: 0.52
+copyright-text: '&copy; 陈峥浩 2024-2026. 保留所有权利。'
+github-link:
+  text: Github
+  href: https://github.com/Chris0829
+license-link:
+  text: License
+  href: https://github.com/Chris0829/Chris0829.github.io/blob/main/LICENSE
+sections:
+  - id: home
+    nav: 首页
+    title: 陈峥浩&ensp;|&ensp;Zhenghao Chen
+    href: '#page-top'
+  - id: news
+    nav: 动态
+    title: 最新动态
+    icon: bi-megaphone-fill
+  - id: research
+    nav: 研究
+    title: 研究经历
+    icon: bi-diagram-3-fill
+  - id: publications
+    nav: 发表
+    title: 论文与专利
+    icon: bi-file-text-fill
+  - id: awards
+    nav: 荣誉
+    title: 荣誉与奖项
+    icon: bi-award-fill
+  - id: service
+    nav: 其他
+    title: 服务与其他
+    icon: bi-people-fill
