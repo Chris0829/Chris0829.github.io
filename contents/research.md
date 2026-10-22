@@ -14,7 +14,7 @@
 </details>
 
 ### MMCSA: Hierarchical Self-supervised Learning on Co-Semantics for Multimodal Recommendation
-**First author** · IEEE Transactions on Multimedia (under review) · Jun 2025 – Nov 2025
+**First student author** · IEEE Transactions on Multimedia (under review) · Jun 2025 – Nov 2025
 
 > **Core idea:** the latent item–item structure behind multimodal interactions is under-exploited, so mining *co-semantics* — semantics jointly defined by modality and behavior — aligns multimodal features with interaction modeling.
 
@@ -23,12 +23,12 @@
 
 - Proposed the *co-semantics* concept to unify multimodal features and interaction behaviors.
 - Developed the first co-semantic-unit subgraph mining algorithm for unsupervised discovery of consistent interaction patterns in multimodal interaction graphs.
-- Designed hierarchical intra-/inter-subgraph contrastive learning fused with cross-modal alignment; corresponding Chinese invention patent submitted (first student inventor).
+- Designed hierarchical intra-/inter-subgraph contrastive learning fused with cross-modal alignment, significantly outperforming baselines on three Amazon datasets with ablations validating each component; corresponding Chinese invention patent submitted (first student inventor).
 
 </details>
 
 ### CS-SHP: Collaborative Structure-Aware Semantic History Profiling for MLLM-Enhanced Recommendation
-**First author** · WSDM 2027 (under review) · May 2026 – Aug 2026
+**First student author** · WSDM 2027 (under review) · May 2026 – Aug 2026
 
 > **Core idea:** frozen MLLM semantics and collaborative ranking capture complementary signals, so routing them through separate scoring paths reconciles global semantics with learned interaction structure.
 
@@ -42,7 +42,7 @@
 </details>
 
 ### The Structural Roots of Thermal Inequity: Linking Street Network Thermal Resilience to Socioeconomic Vulnerability
-**First author** · WWW 2026 (short paper) · Oct 2025
+**First student author** · WWW 2026 (short paper) · Oct 2025 — *rejected (topic deemed insufficiently relevant to the venue); research ongoing.*
 
 > **Core idea:** urban thermal inequity is structurally rooted in street-network topology, so a network-science index of heat-ventilation potential can expose how infrastructure embeds environmental injustice.
 
@@ -56,7 +56,7 @@
 </details>
 
 ### Beyond Expected Coverage: Lower-Tail Risk Management in Fair Influence Maximization
-**First author** · IEEE Transactions on Knowledge and Data Engineering (under review) · Jun 2026 – Oct 2026
+**First student author** · Information Sciences (under review) · Jun 2026 – Oct 2026
 
 > **Core idea:** fairness that only optimizes expected reach overlooks severe coverage failures under adverse diffusion, so explicit lower-tail risk measures are needed to protect disadvantaged groups.
 
@@ -65,7 +65,7 @@
 
 - Formalized lower-tail risk-aware influence maximization with two complementary group-level risk measures (CVaR-based lower-tail group coverage and worst-group shortage probability), scalarized into a single objective.
 - Proposed the LTR-Greedy algorithm under sample-average approximation, reducing worst-group shortage by over 50% with minimal loss in total expected spread.
-- Evaluated on synthetic network families and real topologies (Epinions, Slashdot, Facebook ego).
+- Evaluated on three synthetic network families (homophily, group-size imbalance, bridge bottlenecks) and three real topologies (Epinions, Slashdot, Facebook ego).
 
 </details>
 
@@ -129,7 +129,7 @@
 <summary><b>Details</b></summary>
 
 - Summarized general paradigms of deep time-series forecasting across model architectures, feature-extraction methodology, datasets, and open challenges.
-- The survey has attracted **410+ citations on Google Scholar**.
+- The survey has attracted **428 citations on Google Scholar**.
 
 </details>
 
