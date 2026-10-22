@@ -2,7 +2,8 @@
 - **[2025.10]** 中国发明专利 *《基于多模态语义和行为关系扩散融合的推荐方法及装置》*（专利号 ZL202411862641.8）**授权**。
 - **[2025.01]** 综述 *《Deep Learning for Time Series Forecasting: A Survey》* 发表于 *International Journal of Machine Learning and Cybernetics*（IJMLC），截至目前在 Google Scholar 上被引用 **428 次**。
 - **[2024.12]** 获 **2024 年度硕士特等学业奖学金**。
-- **[2024.09]** 进入西安电子科技大学杭州研究院攻读硕士。
+- **[2024.09]** 保送进入西安电子科技大学杭州研究院攻读硕士。
+- **[2023.10]** 论文 *《An Edge-Cloud Collaborative Aquaculture Monitoring System for Fish Behavior Detection》* 被 IEEE International Conference on Systems, Man, and Cybernetics（SMC 2023，CCF-C）**录用**。
 - **[2023.09]** 获 **2023 学年本科校级一等奖学金**。
 - **[2023.08]** 完成克莱姆森大学 Infrastructure, AI and Urban Nexus 实验室的远程科研实习，方向为适应气候的城市结构。
 - **[2020.10]** 进入浙江工业大学开展本科学习。
