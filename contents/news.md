@@ -2,8 +2,6 @@
 - **[2025.10]** Chinese invention patent *"Recommendation Method and Apparatus Based on Multimodal Semantics and Behavior-Relation Diffusion Fusion"* (No. ZL202411862641.8) is **granted**.
 - **[2025.01]** Our survey *"Deep Learning for Time Series Forecasting: A Survey"* was published in *International Journal of Machine Learning and Cybernetics* (IJMLC) and has since been cited **428 times** on Google Scholar.
 - **[2024.12]** Awarded the **2024 Master's Academic Scholarship, Special Grade**.
-- **[2024.09]** Admitted by recommendation (exempted from the postgraduate entrance examination) to the M.Eng. program at the Hangzhou Institute of Technology, Xidian University.
 - **[2023.10]** Our paper *"An Edge-Cloud Collaborative Aquaculture Monitoring System for Fish Behavior Detection"* is **accepted** at IEEE International Conference on Systems, Man, and Cybernetics (SMC 2023, CCF-C).
 - **[2023.09]** Awarded the **2023 University First-class Scholarship** (undergraduate).
 - **[2023.08]** Completed a remote research internship at the Infrastructure, AI and Urban Nexus Lab, Clemson University, on climate-adaptable urban structures.
-- **[2020.10]** Started the B.Eng. program at Zhejiang University of Technology.
