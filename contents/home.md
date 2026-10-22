@@ -1,7 +1,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Chris0829-181717?logo=github&style=flat-square)](https://github.com/Chris0829)
 [![Email](https://img.shields.io/badge/Email-zjzjczh%40163.com-D14836?logo=gmail&style=flat-square)](mailto:zjzjczh@163.com)
 [![Citations](https://img.shields.io/badge/Google_Scholar_Citations-420%2B-4285F4?style=flat-square)](https://scholar.google.com/)
-[![Personal Statement](https://img.shields.io/badge/Personal_Statement-PDF-2C3E50?style=flat-square)](static/assets/pdf/personal_statement.pdf)
+[![Personal Statement](https://img.shields.io/badge/Personal_Statement-PDF-2C3E50?style=flat-square)](static/assets/pdf/personal_statement.pdf?v=20261022)
 
 <!-- TODO: replace the Google Scholar badge link above with your own profile URL (https://scholar.google.com/citations?user=YOUR_ID). -->
 

@@ -1,7 +1,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Chris0829-181717?logo=github&style=flat-square)](https://github.com/Chris0829)
 [![Email](https://img.shields.io/badge/邮箱-zjzjczh%40163.com-D14836?logo=gmail&style=flat-square)](mailto:zjzjczh@163.com)
 [![Citations](https://img.shields.io/badge/Google_Scholar_引用-420%2B-4285F4?style=flat-square)](https://scholar.google.com/)
-[![Personal Statement](https://img.shields.io/badge/个人陈述-PDF-2C3E50?style=flat-square)](static/assets/pdf/personal_statement.pdf)
+[![Personal Statement](https://img.shields.io/badge/个人陈述-PDF-2C3E50?style=flat-square)](static/assets/pdf/personal_statement.pdf?v=20261022)
 
 我目前是西安电子科技大学杭州研究院信息与通信工程专业的硕士研究生，研究兴趣为**图神经网络**、**时空数据挖掘**和**多模态推荐系统**。我在研究课题中挖掘用户–物品推荐场景中的图结构信息，以提高推荐准确性和模型效率。此外，我始终保持对**城市结构与气候韧性**的研究热情，量化街道网络拓扑如何嵌入城市热不平等，期望将图结构信息的理论和方法应用于该领域，并致力于应对未来全球气候变化与灾害应急。
 
